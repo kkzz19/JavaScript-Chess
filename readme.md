@@ -10,6 +10,7 @@ This project is meant to be simple. It uses no libraries or dependencies and onl
 * Option to select between 2-player and AI
 * Castling/En Passant/Promotion
 * Test different browsers
+* Stalemate
 
 # License
 MIT
