@@ -1,5 +1,4 @@
-var canvas = $('#canvas');
-var canvasEl = canvas[0];
+var canvasEl = document.getElementById("canvas");
 var ctx = canvasEl.getContext("2d");
 var selX = -1;
 var selY = -1;
@@ -481,7 +480,7 @@ function AIMove() {
 var vsAI = true;
 var gameOver = false;
 
-canvas.on("click", function(event) {
+canvasEl.onclick = function(event) {
 
   if(gameOver) {
     return;
@@ -536,7 +535,7 @@ canvas.on("click", function(event) {
   //console.log(selX + "," + selY)
 
   drawBoard();
-});
+};
 
 function movePiece(piece, newX, newY) {
   var oldX = piece.x;
