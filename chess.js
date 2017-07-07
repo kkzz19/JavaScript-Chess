@@ -5,28 +5,40 @@ var selY = -1;
 
 var rookBlack = new Image;
 rookBlack.src = "pieceSprites/rookBlack.png";
+rookBlack.onload = draw;
 var rookWhite = new Image;
 rookWhite.src = "pieceSprites/rookWhite.png";
+rookWhite.onload = draw;
 var bishopBlack = new Image;
 bishopBlack.src = "pieceSprites/bishopBlack.png";
+bishopBlack.onload = draw;
 var bishopWhite = new Image;
 bishopWhite.src = "pieceSprites/bishopWhite.png";
+bishopWhite.onload = draw;
 var pawnBlack = new Image;
 pawnBlack.src = "pieceSprites/pawnBlack.png";
+pawnBlack.onload = draw;
 var pawnWhite = new Image;
 pawnWhite.src = "pieceSprites/pawnWhite.png";
+pawnWhite.onload = draw;
 var knightBlack = new Image;
 knightBlack.src = "pieceSprites/knightBlack.png";
+knightBlack.onload = draw;
 var knightWhite = new Image;
 knightWhite.src = "pieceSprites/knightWhite.png";
+knightWhite.onload = draw;
 var queenBlack = new Image;
 queenBlack.src = "pieceSprites/queenBlack.png";
+queenBlack.onload = draw;
 var queenWhite = new Image;
 queenWhite.src = "pieceSprites/queenWhite.png";
+queenWhite.onload = draw;
 var kingBlack = new Image;
 kingBlack.src = "pieceSprites/kingBlack.png";
+kingBlack.onload = draw;
 var kingWhite = new Image;
 kingWhite.src = "pieceSprites/kingWhite.png";
+kingWhite.onload = draw;
 
 function Piece(color, value, img) {
   this.color = color;
@@ -574,7 +586,9 @@ function turnEnd() {
   }
 }
 
-setTimeout(function() {
+function draw() {
   updatePositions();
   drawBoard();
-}, 100);
+}
+
+draw();
