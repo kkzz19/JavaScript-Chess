@@ -1,4 +1,6 @@
 # About
+Live demo: https://kkzz19.github.io/JavaScript-Chess/
+
 This is a JavaScript program that plays Chess. Right now you can play against a rudimentary AI.
 To play, you start off as white. To make a move, click on a piece, then click on where you want to move it.
 
